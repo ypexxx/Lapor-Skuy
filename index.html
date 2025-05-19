@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lapor Skuy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      .header-container {
+        background-color: #7b1fa2;
+        color: white;
+        padding: 20px;
+        border-radius: 0;
+      }
+
+      .company-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .company-info {
+        font-size: 14px;
+        margin-bottom: 2px;
+      }
+
+      .copyright {
+        font-size: 12px;
+        font-style: italic;
+        text-align: right;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      style="background-color: #581c87"
+    >
+      <div class="container d-flex">
+        <div class="col-4 col-md-3 col-lg-2">
+          <a href="#" class="navbar-brand">
+            <img
+              class=""
+              src="assets/logo.png"
+              alt="Logo"
+              width="40%"
+              height="40%"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="mainNavbar"
+        >
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link text-white active" aria-current="page" href="#"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#reports">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#panduan">Panduan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex">
+          <a href="">
+            <i></i>
+          </a>
+          <a class="nav-link text-white d-none d-lg-inline" href="#panduan">
+            bantuan
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="#">
+      <div class="position-relative overflow-hidden vh-100">
+        <div class="position-absolute w-100 z-n1">
+          <img
+            src="assets/background.png"
+            width="100%"
+            height="auto"
+            class="img-fluid object-fit-cover vh-100"
+            alt="background.jpg"
+          />
+        </div>
+
+        <div
+          class="container-lg d-flex flex-column align-items-center justify-content-center text-center vh-100"
+        >
+          <img
+            src="assets/logo2.png"
+            alt="Logo"
+            width="50%"
+            height="50%"
+            class="mb-4 object-fit-scale"
+          />
+          <p class="h1 text-light mt-lg-5 fw-bold">Welcome to Lapor Skuy</p>
+          <a href="#formLapor">
+            <button type="button" class="btn btn-light btn-outline-warning btn-lg mt-3 text-dark">Lapor Yuk!</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Lapor -->
+    <section id="formLapor" class="my-5">
+      <div class="container">
+        <div class="card shadow p-4 mx-auto col-12">
+          <h3 class="mb-4 text-center">Form Laporan</h3>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Masukkan nama Anda"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Jenis Laporan</label>
+              <select class="form-select">
+                <option>Pengaduan</option>
+                <option>Aspirasi</option>
+                <option>Permintaan Informasi</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Isi Laporan</label>
+              <textarea
+                class="form-control"
+                rows="5"
+                placeholder="Tulis laporan Anda di sini..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              style="background-color: #581c87"
+              class="btn w-100 text-light"
+            >
+              Kirim Laporan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 1 AduanTeratas -->
+    <section id="reports">
+      <div class="container py-5">
+        <div class="text-center mb-4">
+          <h4 class="fw-bold">Aduan Teratas Minggu Ini</h4>
+          <p class="">
+            Berikut adalah daftar laporan pengguna yang paling banyak mendapat
+            perhatian selama tujuh hari terakhir
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div
+              class="card h-100 shadow border-1 d-flex flex-column justify-content-between"
+            >
+              <div class="card-body d-flex flex-column">
+                <h6 class="card-title fw-semibold">WIFI LEMOTTT!!!</h6>
+                <p class="text-muted flex-grow-1 mb-3">
+                  Akhir-akhir ini saya mendapati WIFI kampus sering kali lemot
+                  terutama pada area masjid yang berada di gedung 2 lantai 4.
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-primary btn-sm w-50">
+                    💬 Komentar
+                  </button>
+                  <button class="btn btn-outline-warning btn-sm w-50">
+                    👍 Vote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div
+              class="card h-100 shadow border-1 d-flex flex-column justify-content-between"
+            >
+              <div class="card-body d-flex flex-column">
+                <h6 class="card-title fw-semibold">Fasilitas Toilet Kurang Terawat</h6>
+                <p class="text-muted flex-grow-1 mb-3">
+                  Banyak toilet mahasiswa tidak memiliki sabun, tisu, dan kadang airnya mati terutama di gedung 5.
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-primary btn-sm w-50">
+                    💬 Komentar
+                  </button>
+                  <button class="btn btn-outline-warning btn-sm w-50">
+                    👍 Vote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div
+              class="card h-100 shadow border-1 d-flex flex-column justify-content-between"
+            >
+              <div class="card-body d-flex flex-column">
+                <h6 class="card-title fw-semibold">AC Tidak Berfungsi</h6>
+                <p class="text-muted flex-grow-1 mb-3">
+                  AC di ruang 5.4.6 sudah tidak dingin selama lebih dari seminggu, membuat suasana belajar tidak nyaman.
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-primary btn-sm w-50">
+                    💬 Komentar
+                  </button>
+                  <button class="btn btn-outline-warning btn-sm w-50">
+                    👍 Vote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div
+              class="card h-100 shadow border-1 d-flex flex-column justify-content-between"
+            >
+              <div class="card-body d-flex flex-column">
+                <h6 class="card-title fw-semibold">Layanan Administrasi Lambat</h6>
+                <p class="text-muted flex-grow-1 mb-3">
+                  Pengurusan surat aktif kuliah membutuhkan waktu terlalu lama, bahkan untuk keperluan mendesak.
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-primary btn-sm w-50">
+                    💬 Komentar
+                  </button>
+                  <button class="btn btn-outline-warning btn-sm w-50">
+                    👍 Vote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div
+              class="card h-100 shadow border-1 d-flex flex-column justify-content-between"
+            >
+              <div class="card-body d-flex flex-column">
+                <h6 class="card-title fw-semibold">Tempat Parkir Mahasiswa Terbatas</h6>
+                <p class="text-muted flex-grow-1 mb-3">
+                 Area parkir sering penuh bahkan sebelum pukul 08.00, membuat mahasiswa kesulitan menemukan tempat parkir.
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-primary btn-sm w-50">
+                    💬 Komentar
+                  </button>
+                  <button class="btn btn-outline-warning btn-sm w-50">
+                    👍 Vote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div
+              class="card h-100 shadow border-1 d-flex flex-column justify-content-between"
+            >
+              <div class="card-body d-flex flex-column">
+                <h6 class="card-title fw-semibold">Proyektor mati</h6>
+                <p class="text-muted flex-grow-1 mb-3">
+                    Proyektor ruang 4.2.3 tidak bisa hidup sehingga mengganggu proses pembelajaran.
+                </p>
+
+                <div class="d-flex gap-2">
+                  <button class="btn btn-outline-primary btn-sm w-50">
+                    💬 Komentar
+                  </button>
+                  <button class="btn btn-outline-warning btn-sm w-50">
+                    👍 Vote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 (Panduan) -->
+    <section id="panduan" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold text-purple">
+          Panduan Cara Lapor Skuy AMIKOM!
+        </h2>
+
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead class="table-primary text-center">
+              <tr>
+                <th style="width: 50px">#</th>
+                <th>Langkah Panduan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td>Pelapor merupakan Mahasiswa Aktif Universitas Amikom</td>
+              </tr>
+              <tr>
+                <td class="text-center">2</td>
+                <td>Pelapor mengisi form yang telah disediakan</td>
+              </tr>
+              <tr>
+                <td class="text-center">3</td>
+                <td>Pelapor mengisi data diri dengan benar</td>
+              </tr>
+              <tr>
+                <td class="text-center">4</td>
+                <td>Pelapor mengisi data laporan dengan benar dan lengkap</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid p-0">
+        <div class="header-container">
+          <div class="row">
+            <div class="col-12">
+              <div class="company-name">LAPOR SKUY CORP</div>
+              <div class="company-info">Basement 5, Ruang 4</div>
+              <div class="company-info">YOGYAKARTA 92123</div>
+              <div class="company-info">FAX 0812345689</div>
+
+              <p class="text-center" style="margin-bottom: 0">
+                COPYRIGHT LAPOR SKUY AMIKOM. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+      integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
